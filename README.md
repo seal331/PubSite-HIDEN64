@@ -6,4 +6,4 @@ A website that anybody can publish edits to.
 - No illegal content
 - You're responsible for your edits
 - ...
-- Profit
+- Profit!
