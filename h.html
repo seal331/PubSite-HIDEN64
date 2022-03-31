@@ -12,13 +12,14 @@
 <h1>H</h1>
 <p>H</p>
 <script>
+var clientHeight = 0;
 function update() {
- for (var i = 0; i < document.documentElement.clientHeight; i++) {
-   var paragraph = document.createElement("p");
-   var node = document.createTextNode("H");
-   paragraph.appendChild(node);
+ for (var i = 0; i < document.documentElement.clientHeight - clientHeight; i++) {
+   var image = document.createElement("img");
+   image.src = "WHAT H.png";
    document.body.appendChild(paragraph);
   }
+  clientHeight = document.documentElement.clientHeight;
 }
 window.addEventListener("scroll", function() {
  var rect = document.documentElement.getBoundingClientRect();
